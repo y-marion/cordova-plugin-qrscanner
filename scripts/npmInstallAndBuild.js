@@ -33,7 +33,7 @@ module.exports = function(context) {
           return p + "@" + pkg.devDependencies[p];
         })
       ).then(function() {
-        return Q.ninvoke(npm.commands, "run", "build");
+        return Q.ninvoke(npm.commands, "run", ["build"]);
       });
     });
   });
