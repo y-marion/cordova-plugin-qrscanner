@@ -9,6 +9,8 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
+  <hook type="before_plugin_install" src="scripts/npmInstallAndBuild.js" />
+
   <js-module src="www/www.min.js" name="QRScanner">
     <clobbers target="QRScanner" />
   </js-module>
